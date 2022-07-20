@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of three integers add to zero</title>
+</head>
+<body>
+    <script>
+        const howMany = prompt("How many numbers? should be more than three");
+        let numbers = new Array();
+        for(let i = 0; i<howMany; i++){
+            numbers[i] = prompt("Enter the number");
+        }
+        document.write(numbers);
+        numbers.sort();
+        function findTriplet(numbers) {
+            let found = false;
+            for (let i = 0; i < numbers.length; i++) {
+                for (let j = i + 1; j < numbers.length; j++) {
+                    for (let k = j + 1; k < numbers.length; k++) {
+                        if (numbers[i] + numbers[j] + numbers[k] == 0) {
+                            document.write(numbers[i]+" "+numbers[j]+" "+numbers[k]);
+                            found = true;
+                        }
+                    }
+                }
+            }
+            if(found == false){
+                document.write("Not found");
+            }
+        }
+        findTriplet(numbers);
+    </script>
+</body>
+</html>
