@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dieArr = new Array();
+        let count1=0;
+        let count2=0;
+        let count3=0;
+        let count4=0;
+        let count5=0;
+        let count6=0;
+        while (count1<=10 && count2<=10 && count3<=10 && count4<=10 && count5<=10 && count6<=10) {
+        let die = Math.floor(Math.random()*10)%6+1;
+        switch (die) {
+            case 1:
+                count1++;
+                if(count1 == 10){
+                    document.write("Highest is: "+die);
+                }    
+            break;
+            case 2:
+                count2++;
+                if(count2 == 10){
+                    document.write("Highest is: "+die);
+                }    
+            break;
+            case 3:
+                count3++;
+                if(count3 == 10){
+                    document.write("Highest is: "+die);
+                }    
+            break;
+            case 4:
+                count4++;
+                if(count4 == 10){
+                    document.write("Highest is: "+die);
+                }    
+            break;
+            case 5:
+                count5++;
+                if(count5 == 10){
+                    document.write("Highest is: "+die);
+                }    
+            break;
+            case 6:
+                count6++;
+                if(count6 == 10){
+                    document.write("Highest is: "+die);
+                }    
+            break;
+        }
+        }
+    </script>
+</body>
+</html>
